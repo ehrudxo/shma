@@ -1,0 +1,33 @@
+{
+  "name": "cpgoods",
+  "version": "0.0.1",
+  "description": "compare goods",
+  "main": "web.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ehrudxo/cpgoods.git"
+  },
+  "keywords": [
+    "image",
+    "node"
+  ],
+  "author": "keen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ehrudxo/cpgoods/issues"
+  },
+  "homepage": "https://github.com/ehrudxo/cpgoods",
+  "dependencies": {
+    "canvas": "~1.1.3",
+    "express": "~4.2.0",
+    "formidable": "~1.0.14",
+    "jade": "~1.3.1",
+    "jquery-file-upload-middleware": "~0.1.1",
+    "logfmt": "~1.1.2",
+    "pg": "~3.1.0",
+    "string": "^1.8.1"
+  }
+}
