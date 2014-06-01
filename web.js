@@ -18,7 +18,9 @@ app.use(express.static(__dirname + '/public'));
 app.use('/blabla/:id/which/:which', function(req,res){
 	res.render('blabla', {id:req.params.id,which :req.params.which});
 })
-
+app.use('/', function(eq,res){
+	res.send("Hello shma!");
+});
 app.use('/canvas/:id/which/:which', function( req, res ){
 	
 	dao.connect( function(){
