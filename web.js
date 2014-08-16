@@ -21,6 +21,16 @@ app.use('/blabla/:id/which/:which', function(req,res){
 app.get('/bible', function(req,res){
 	res.render('bible');
 });
+app.get('/read', function(req,res){
+	res.render('read');
+});
+app.get('/getAll', function(req,res){
+	bDao.connect( function(){
+		bDao.getAll ( function( jsonObj ){
+			res.send(JSON.stringify( jsonObj ));
+		});
+	});
+});
 app.use('/', function(req,res){
 	res.send("Hello shma!");
 });
